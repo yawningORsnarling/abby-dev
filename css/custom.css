@@ -1,0 +1,397 @@
+
+/*****************************************************************************
+ device screen dimensions
+ *****************************************************************************
+
+    What's my browser size?
+    https://www.webfx.com/tools/whats-my-browser-size/
+
+    iPhone 5S : breakpoint of 320px
+    iPhone 6+ : breakpoint of 414px
+    iPad Mini : breakpoint of 703px
+    iPad Air  : breakpoint of 768px
+*/
+
+
+/*****************************************************************************
+ fonts
+ *****************************************************************************/
+
+/* landing page */
+@font-face {
+    font-family: 'TenorSans-Regular';
+    src: url('../fonts/TenorSans-Regular.ttf') format('truetype');
+}
+.ts_reg {
+    font-family: 'TenorSans-Regular';
+}
+
+@font-face {
+    font-family: 'Gotu-Regular';
+    src: url('../fonts/Gotu-Regular.ttf') format('truetype');
+}
+.gotu_reg {
+    font-family: 'Gotu-Regular';
+}
+
+@font-face {
+    font-family: 'AlegreyaSansSC-Medium';
+    src: url('../fonts/AlegreyaSansSC-Medium.ttf') format('truetype');
+}
+.aleg_med {
+    font-family: 'AlegreyaSansSC-Medium';
+}
+
+/* extra small devices (phones, 600px and down) 
+ *   - pixel 5a 413px break
+ */
+@media only screen and (max-width: 600px) {
+	#parallax { height: 800px; }
+  .navbar-toggler { z-index: 3; }
+  .nav-link { font-size: 30px; }
+  .navbar {
+      z-index: 2;
+      height: 100px;
+      width: 70%;
+    }
+  .nav-social {
+      z-index: 1;
+      height: 100px;
+      font-size: 20px;
+  }
+  .navbar-collapse {
+      padding-left: 20px;
+      padding-top: 100px;
+  }
+  .abby_title {
+    font-size: 50px;
+    height: 55px;
+  }
+  .abby_church {
+    top: 420px;
+    left: 50px;
+    filter: opacity(75%);
+  }
+  #first_letter::first-letter {                                               
+      font-size: 70px;                                                        
+  }
+}
+
+/* small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	#parallax { height: 1000px; }
+  .navbar-toggler { z-index: 3; }
+  .nav-link { font-size: 30px; }
+  .navbar {
+      z-index: 2;
+      height: 100px;
+      width: 50%;
+    }
+  .nav-social {
+      z-index: 1;
+      height: 100px;
+  }
+  .navbar-collapse {
+      padding-left: 20px;
+      padding-top: 100px;
+  }
+  .abby_title {
+    font-size: 50px;
+    height: 55px;
+  }
+  .abby_church {
+    top: 600px;
+    left: 50px;
+    filter: opacity(75%);
+  }
+  #first_letter::first-letter {                                               
+      font-size: 70px;                                                        
+  }
+}
+
+/* medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	#parallax { height: 1200px; }
+  .navbar-toggler { z-index: 3; }
+  .nav-link { font-size: 30px }
+  .navbar {
+      width: 250px;
+      z-index: 2;
+    }
+  .nav-social {
+      z-index: 1;
+      height: 100px;
+  }
+  .abby_title {
+    font-size: 70px;
+    height: 70px;
+  }
+  .abby_church {
+    top: 680px;
+    left: 120px;
+    filter: opacity(75%);
+  }
+  #first_letter::first-letter {                                               
+      font-size: 90px;                                                        
+  }
+}
+
+/* large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	#parallax { height: 1400px; }
+  .nav-link { font-size: 20px; }
+  .navbar-collapse {
+      padding-left: 0px;
+      padding-top: 0px;
+  }
+  .navbar {
+      width: 65%;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 2;
+    }
+  .nav-social {
+      z-index: 1;
+      height: 100px;
+  }
+  .abby_title {
+    font-size: 70px;
+    height: 70px;
+  }
+  .abby_church {
+    top: 640px;
+    left: 120px;
+    filter: opacity(75%);
+  }
+  #first_letter::first-letter {                                               
+      font-size: 90px;                                                        
+  }
+}
+
+/* extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	#parallax { height: 1800px; }
+  .nav-link { font-size: 25px; }
+  .navbar {
+      width: 65%;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 2;
+    }
+  .nav-social {
+      height: 100px;
+      z-index: 1;
+  }
+  .abby_church {
+      top: 600px;
+      left: 240px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+	#parallax { height: 2000px; }
+  .nav-link { font-size: 25px; }
+  .navbar {
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 2;
+    }
+  .nav-social {
+      height: 100px;
+      z-index: 1;
+  }
+  .abby_church {
+      top: 600px;
+      left: 300px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+	#parallax { height: 2200px;	}
+  .nav-link { font-size: 25px; }
+  .navbar {
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 2;
+    }
+  .nav-social {
+      height: 100px;
+      z-index: 1;
+  }
+  .abby_title {
+    font-size: 90px;
+    height: 90px;
+  }
+  .abby_church {
+      top: 600px;
+      left: 340px;
+  }
+  #first_letter::first-letter {                                               
+      font-size: 110px;                                                        
+  }
+}
+@media only screen and (min-width: 1800px) {
+	#parallax { height: 2400px; }
+  .nav-link { font-size: 25px; }
+  .navbar {
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 2;
+    }
+  .nav-social {
+      height: 100px;
+      z-index: 1;
+  }
+  .abby_title {
+    font-size: 90px;
+    height: 90px;
+  }
+  .abby_church {
+      top: 700px;
+      left: 450px;
+  }
+  #first_letter::first-letter {                                               
+      font-size: 110px;                                                        
+  }
+}
+
+
+#copyright_html {
+    padding: 5px;
+}
+/*****************************************************************************/
+/* parallax
+/*****************************************************************************/
+
+html, body {
+  margin:0;
+  padding:0;
+  height: 100%;
+}
+
+body {
+  /* Without this compositing trigger, Edge does not correctly parallax until
+     a repaint is triggered otherwise. */
+  transform: translateZ(0);
+}
+
+#overflow {
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
+/* extra large devices (large laptops and desktops, 1200px and up) */
+#parallax {
+  background: 50% 50% / cover;
+  background-image: url('../images/home/abby_whisky.jpg');
+  position: relative;
+  transform: translateZ(-2px) scale(3);
+  transform-style: preserve-3d;
+  transform-origin: 0% 0% 0px;
+  width: 100%;
+}
+
+#container {
+  position: relative;
+}
+
+#content {
+  background: white;
+  height: 3000px;
+  position: relative;
+}
+
+.magic-fixed-pixel {
+  /* Without this fixed position element, Edge does not correctly update the
+     parallax position until it is forced to repaint. */
+  position: fixed;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  z-index: 1;
+}
+
+/* This magic pixel div is necessary to get the #content div to paint its
+   background to the top of its bounds. Otherwise the background is only painted
+   where the content starts (excluding margins). */
+.magic-pixel {
+  width: 1px;
+  height: 1px;
+}
+
+.box {
+  margin: 10% 15%;
+  border: 3px solid #aaa;
+  padding: 10%;
+}
+
+.overflow-parallax #overflow,
+.sticky-parallax #container {
+  perspective: 1px;
+  perspective-origin: 0% 0%;
+}
+
+.overflow-parallax #container {
+  transform-style: preserve-3d;
+}
+
+.sticky-parallax #parallax {
+  position: -webkit-sticky;
+  top: 0;
+}
+
+
+/* default text over home page background image */
+.abby_church {
+    font-family: 'TenorSans-Regular';
+    font-weight: 900;
+    color: white;
+    filter: opacity(75%);
+}
+
+.social-icons {
+    font-size: 45px;
+    color: white;
+    filter: opacity(75%);
+}
+
+/* collapsable menu links */
+.nav-link {
+    color: white;
+    font-weight: 800;
+    filter: opacity(75%);
+}
+
+
+.social-icons:hover,
+.nav-link:hover,
+.navbar-toggler-icon:hover {
+    color: #667799 !important;
+    transition-duration: 350ms !important;
+    transition-timing-function: ease-in-out !important;
+    transition-delay: 50ms !important;
+}
+
+.navbar-toggler-icon {
+    font-size: 40px;
+    color: white;
+    filter: opacity(75%);
+    background-image: none;
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+.navbar-toggler {
+    box-shadow: none !important;
+    border: 0;
+}
+
+.abby_church {
+    height: 0px;
+    position: relative;
+}
