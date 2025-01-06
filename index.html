@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="css/custom-flickty.css">
     <link rel="stylesheet" href="css/custom.css">
 
 </head>
@@ -112,36 +113,36 @@
                 <span class="section_link_text">THEATRE</span>
             </a>
 
-            <div class="main-carousel" data-flickity='{"autoPlay": true, "imagesLoaded": true, "wrapAround": true, "pageDots": false}'>
+            <div class="main-carousel" data-flickity='{"autoPlay": true, "fullscreen": true, "imagesLoaded": true, "wrapAround": true, "pageDots": false}'>
                 <!-- Carousel items -->
-                <div class="carousel-cell">
-                    <a class="example-image-link" href="images/theatre/shows/millie/1.jpg" data-lightbox="theatre-millie" data-title="Emily Lambert Photography">
-                        <img src="images/theatre/shows/millie/1.jpg" alt="theatre-millie">
+                <div class="">
+                    <a class="carousel-cell" href="images/theatre/shows/millie/1.jpg" data-lightbox="theatre-millie" data-title="Emily Lambert Photography">
+                        <img class="carousel-cell-image" src="images/theatre/shows/millie/1.jpg" alt="theatre-millie">
                     </a>
                 </div>
-                <div class="carousel-cell">
-                    <a href="images/theatre/shows/into_the_woods/1.jpg" data-lightbox="theatre-into-the-woods" data-title="Emily Lambert Photography">
-                        <img src="images/theatre/shows/into_the_woods/1.jpg" alt="cinderella">
+                <div class="">
+                    <a class="carousel-cell" href="images/theatre/shows/into_the_woods/1.jpg" data-lightbox="theatre-into-the-woods" data-title="Emily Lambert Photography">
+                        <img class="carousel-cell-image" src="images/theatre/shows/into_the_woods/1.jpg" alt="cinderella">
                     </a>
                 </div>
-                <div class="carousel-cell">
-                    <a href="images/theatre/shows/matilda/3.jpg" data-lightbox="theatre-matilda" data-title="Emily Lambert Photography">
-                        <img src="images/theatre/shows/matilda/3.jpg" alt="honey">
+                <div class="">
+                    <a class="carousel-cell" href="images/theatre/shows/matilda/3.jpg" data-lightbox="theatre-matilda" data-title="Emily Lambert Photography">
+                        <img class="carousel-cell-image" src="images/theatre/shows/matilda/3.jpg" alt="honey">
                     </a>
                 </div>
-                <div class="carousel-cell">
-                    <a href="images/theatre/shows/crazy_for_you/1.jpg" data-lightbox="theatre-crazy-for-you" data-title="Emily Lambert Photography">
-                        <img src="images/theatre/shows/crazy_for_you/1.jpg" alt="polly">
+                <div class="">
+                    <a class="carousel-cell" href="images/theatre/shows/crazy_for_you/1.jpg" data-lightbox="theatre-crazy-for-you" data-title="Emily Lambert Photography">
+                        <img class="carousel-cell-image" src="images/theatre/shows/crazy_for_you/1.jpg" alt="polly">
                     </a>
                 </div>
-                <div class="carousel-cell">
-                    <a href="images/theatre/shows/legendale/2.jpg" data-lightbox="theatre-legendale" data-title="Emily Lambert Photography">
-                        <img src="images/theatre/shows/legendale/2.jpg" alt="zelayna">
+                <div class="">
+                    <a class="carousel-cell" href="images/theatre/shows/legendale/2.jpg" data-lightbox="theatre-legendale" data-title="Emily Lambert Photography">
+                        <img class="carousel-cell-image" src="images/theatre/shows/legendale/2.jpg" alt="zelayna">
                     </a>
                 </div>
-                <div class="carousel-cell">
-                    <a href="images/theatre/shows/a_chorus_line/1.jpg" data-lightbox="theatre-a-chorus-line" data-title="Emily Lambert Photography">
-                        <img src="images/theatre/shows/a_chorus_line/1.jpg" alt="maggie">
+                <div class="">
+                    <a class="carousel-cell" href="images/theatre/shows/a_chorus_line/1.jpg" data-lightbox="theatre-a-chorus-line" data-title="Emily Lambert Photography">
+                        <img class="carousel-cell-image" src="images/theatre/shows/a_chorus_line/1.jpg" alt="maggie">
                     </a>
                 </div>
             </div>
@@ -246,6 +247,13 @@
             }
         });
     </script>
+    <!-- <script>
+    $('.main-carousel').flickity({
+        // options
+        cellAlign: 'center',
+        contain: true
+      });
+    </script> -->
     
 </body>
 </html>
