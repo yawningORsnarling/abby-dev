@@ -78,6 +78,22 @@
 
     <!--
     **********************************************************************
+    BIO
+    **********************************************************************
+    -->
+
+    <div id="bio-section" class="row justify-content-center" style="border-top: 2px solid white; background-color: #b3ccc6; min-height:400px">
+        <div class="col text-center my-auto" style="max-width: 1200px">
+            <h2 class="gotu_reg" style="color: white">
+                Abby is a NYC-based actor who has performed on Broadway, in national tours, and in regional theatres across the country. She is currently featured in multiple national commercial, print, and voice over campaigns.
+            </h2>
+        </div>
+    </div>
+
+
+
+    <!--
+    **********************************************************************
     THEATRE
     **********************************************************************
     -->
@@ -90,30 +106,18 @@
     -->
 
     <div id="theatre-section" style="border-top: 2px solid white; background-color: #2e475d; min-height:400px;">
-        <div class="container theatre_latest">
-            <div class="row">
-                <div class="col">
-                    <p class="theatre_quote" style="margin-bottom: 20px;">
+        <div class="container">
+
+            <div class="row" style="margin-bottom: 20px">
+                <div class="col" style="text-align: center">
+                    <p class="theatre_quote" style="margin-top: 40px; margin-bottom: 20px;">
                         <strong>"Abby Church is electric."</strong><br>
                         -League of Cincinnati Theatres
                     </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <p class="theatre_quote" style="margin-top: 20px; margin-bottom: 40px;">
-                        <strong>"She demonstrates a scope of limitless talent."</strong><br>
-                        -Planet Vero
-                    </p>
-                </div>
-            </div>
 
-            <!-- SECTION LINK -->
-            <a class="nav-hover navbar-icons" href="theatre.html">
-                <span class="section_link_text">THEATRE</span>
-            </a>
-
-            <div class="main-carousel" data-flickity='{"autoPlay": true, "fullscreen": true, "imagesLoaded": true, "wrapAround": true, "pageDots": false}'>
+            <div class="main-carousel" data-flickity='{"autoPlay": true, "fullscreen": true, "imagesLoaded": true, "wrapAround": true, "pageDots": false, "lazyload": true}'>
                 <!-- Carousel items -->
                 <div class="">
                     <a class="carousel-cell" href="images/theatre/shows/millie/1.jpg" data-lightbox="theatre-millie" data-title="Emily Lambert Photography">
@@ -144,6 +148,15 @@
                     <a class="carousel-cell" href="images/theatre/shows/a_chorus_line/1.jpg" data-lightbox="theatre-a-chorus-line" data-title="Emily Lambert Photography">
                         <img class="carousel-cell-image" src="images/theatre/shows/a_chorus_line/1.jpg" alt="maggie">
                     </a>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 20px">
+                <div class="col" style="text-align: center">
+                    <p class="theatre_quote" style="margin-top: 20px; margin-bottom: 40px;">
+                        <strong>"She demonstrates a scope of limitless talent."</strong><br>
+                        -Planet Vero
+                    </p>
                 </div>
             </div>
 
@@ -178,20 +191,6 @@
     <span class="section_link_text">GALLERY</span>
     </a>
 
-    </div>
-
-    <!--
-    **********************************************************************
-    BIO
-    **********************************************************************
-    -->
-
-    <div class="row justify-content-center" style="border-top: 2px solid white; background-color: #b3ccc6; min-height:400px">
-        <div class="col text-center my-auto" style="max-width: 1200px">
-            <h2 class="gotu_reg" style="color: white">
-                Abby is a NYC-based actor who has performed on Broadway, in national tours, and in regional theatres across the country. She is currently featured in multiple national commercial, print, and voice over campaigns.
-            </h2>
-        </div>
     </div>
 
     <!--
@@ -252,7 +251,7 @@
         // options
         cellAlign: 'center',
         contain: true
-      });
+    });
     </script> -->
     
 </body>

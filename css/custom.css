@@ -395,3 +395,16 @@ body {
     height: 0px;
     position: relative;
 }
+
+.theatre_quote {
+    font-family: 'Gotu-Regular';
+    font-size: 15px;
+    color: white;
+}
+
+.theatre_quote strong {
+    font-family: 'Gotu-Regular';
+    font-size: 25px;
+    color: white;
+    font-style: italic;
+}
