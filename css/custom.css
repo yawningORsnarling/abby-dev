@@ -365,9 +365,15 @@ body {
     filter: opacity(75%);
 }
 
+.theatre-link {
+    color: white;
+    font-family: 'Gotu-Regular';
+    filter: opacity(75%);
+}
 
 .social-icons:hover,
 .nav-link:hover,
+.theatre-link:hover,
 .navbar-toggler-icon:hover {
     color: #667799 !important;
     transition-duration: 350ms !important;
