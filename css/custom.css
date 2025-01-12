@@ -47,22 +47,6 @@
  */
 @media only screen and (max-width: 600px) {
 	#parallax { height: 800px; }
-  .navbar-toggler { z-index: 3; }
-  .nav-link { font-size: 30px; }
-  .navbar {
-      z-index: 2;
-      height: 100px;
-      width: 70%;
-    }
-  .nav-social {
-      z-index: 1;
-      height: 100px;
-      font-size: 20px;
-  }
-  .navbar-collapse {
-      padding-left: 20px;
-      padding-top: 100px;
-  }
   .abby_title {
     font-size: 50px;
     height: 55px;
@@ -80,21 +64,6 @@
 /* small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 	#parallax { height: 1000px; }
-  .navbar-toggler { z-index: 3; }
-  .nav-link { font-size: 30px; }
-  .navbar {
-      z-index: 2;
-      height: 100px;
-      width: 50%;
-    }
-  .nav-social {
-      z-index: 1;
-      height: 100px;
-  }
-  .navbar-collapse {
-      padding-left: 20px;
-      padding-top: 100px;
-  }
   .abby_title {
     font-size: 50px;
     height: 55px;
@@ -112,16 +81,6 @@
 /* medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 	#parallax { height: 1200px; }
-  .navbar-toggler { z-index: 3; }
-  .nav-link { font-size: 30px }
-  .navbar {
-      width: 250px;
-      z-index: 2;
-    }
-  .nav-social {
-      z-index: 1;
-      height: 100px;
-  }
   .abby_title {
     font-size: 70px;
     height: 70px;
@@ -139,21 +98,6 @@
 /* large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 	#parallax { height: 1400px; }
-  .nav-link { font-size: 20px; }
-  .navbar-collapse {
-      padding-left: 0px;
-      padding-top: 0px;
-  }
-  .navbar {
-      width: 65%;
-      margin-left: auto;
-      margin-right: auto;
-      z-index: 2;
-    }
-  .nav-social {
-      z-index: 1;
-      height: 100px;
-  }
   .abby_title {
     font-size: 70px;
     height: 70px;
@@ -171,17 +115,6 @@
 /* extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 	#parallax { height: 1800px; }
-  .nav-link { font-size: 25px; }
-  .navbar {
-      width: 65%;
-      margin-left: auto;
-      margin-right: auto;
-      z-index: 2;
-    }
-  .nav-social {
-      height: 100px;
-      z-index: 1;
-  }
   .abby_church {
       top: 600px;
       left: 240px;
@@ -189,17 +122,6 @@
 }
 @media only screen and (min-width: 1400px) {
 	#parallax { height: 2000px; }
-  .nav-link { font-size: 25px; }
-  .navbar {
-      width: 75%;
-      margin-left: auto;
-      margin-right: auto;
-      z-index: 2;
-    }
-  .nav-social {
-      height: 100px;
-      z-index: 1;
-  }
   .abby_church {
       top: 600px;
       left: 300px;
@@ -207,17 +129,6 @@
 }
 @media only screen and (min-width: 1600px) {
 	#parallax { height: 2200px;	}
-  .nav-link { font-size: 25px; }
-  .navbar {
-      width: 75%;
-      margin-left: auto;
-      margin-right: auto;
-      z-index: 2;
-    }
-  .nav-social {
-      height: 100px;
-      z-index: 1;
-  }
   .abby_title {
     font-size: 90px;
     height: 90px;
@@ -232,17 +143,6 @@
 }
 @media only screen and (min-width: 1800px) {
 	#parallax { height: 2400px; }
-  .nav-link { font-size: 25px; }
-  .navbar {
-      width: 75%;
-      margin-left: auto;
-      margin-right: auto;
-      z-index: 2;
-    }
-  .nav-social {
-      height: 100px;
-      z-index: 1;
-  }
   .abby_title {
     font-size: 90px;
     height: 90px;
@@ -358,13 +258,6 @@ body {
     filter: opacity(75%);
 }
 
-/* collapsable menu links */
-.nav-link {
-    color: white;
-    font-weight: 800;
-    filter: opacity(75%);
-}
-
 .theatre-link {
     color: white;
     font-family: 'Gotu-Regular';
@@ -372,29 +265,11 @@ body {
 }
 
 .social-icons:hover,
-.nav-link:hover,
-.theatre-link:hover,
-.navbar-toggler-icon:hover {
+.theatre-link:hover {
     color: #667799 !important;
     transition-duration: 350ms !important;
     transition-timing-function: ease-in-out !important;
     transition-delay: 50ms !important;
-}
-
-.navbar-toggler-icon {
-    font-size: 40px;
-    color: white;
-    filter: opacity(75%);
-    background-image: none;
-}
-
-.navbar-collapse {
-    justify-content: center;
-}
-
-.navbar-toggler {
-    box-shadow: none !important;
-    border: 0;
 }
 
 .abby_church {
