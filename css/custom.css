@@ -188,7 +188,7 @@ body {
   background: 50% 50% / cover;
   background-image: url('../images/home/abby_whisky.jpg');
   position: relative;
-  transform: translateZ(-2px) scale(3);
+  /* transform: translateZ(-2px) scale(3); */
   transform-style: preserve-3d;
   transform-origin: 0% 0% 0px;
   width: 100%;
