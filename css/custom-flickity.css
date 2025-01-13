@@ -88,12 +88,10 @@
     display: none;
 }
 /* hide highlighted cicrle around arrow when clicked */
-.flickity-button:focus,
-.flickity-prev-next-button:focus {
+.flickity-button:focus {
     outline: none;
     box-shadow: none;
 }
-
 
 /* resume section */
 .resume-carousel-1 .flickity-prev-next-button .arrow,
