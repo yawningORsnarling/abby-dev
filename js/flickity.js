@@ -2,7 +2,7 @@
 /* Theatre */
 var tc1 = document.querySelector('.theatre-carousel-1');
 var flkty = new Flickity( tc1, {
-    lazyLoad: true,
+    // lazyLoad: true,
     imagesLoaded: true,
     autoPlay: true,
     autoPlay: 3000,
