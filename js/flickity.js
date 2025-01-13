@@ -5,7 +5,7 @@ var flkty = new Flickity( tc1, {
     // lazyLoad: true,
     imagesLoaded: true,
     autoPlay: true,
-    autoPlay: 3000,
+    autoPlay: 4000,
     wrapAround: true,
     pageDots: false,
     cellAlign: 'center',
