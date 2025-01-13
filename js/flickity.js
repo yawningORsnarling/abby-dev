@@ -3,13 +3,11 @@
 var tc1 = document.querySelector('.theatre-carousel-1');
 var flkty = new Flickity( tc1, {
     // lazyLoad: true,
-    imagesLoaded: true,
+    // imagesLoaded: true,
     autoPlay: true,
     autoPlay: 4000,
     wrapAround: true,
     pageDots: false,
-    cellAlign: 'center',
-    contain: true
 });
 
 /* Commercial */
