@@ -46,7 +46,11 @@
  *   - pixel 5a 413px break
  */
 @media only screen and (max-width: 600px) {
-	#parallax { height: 800px; }
+	#parallax {
+    height: 800px;
+    transform: translateZ(-2px) scale(3);
+  }
+    
   .abby_title {
     font-size: 50px;
     height: 55px;

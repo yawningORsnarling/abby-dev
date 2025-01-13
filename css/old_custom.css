@@ -1,0 +1,275 @@
+body, html {
+	height: 100%;
+	padding: 0;
+}
+
+.custom-toggler .navbar-toggler-icon {
+	background-image: url("../img/home/hamburger.png");
+}
+
+.slick-prev:before, .slick-next:before {
+	font-family: "slick";
+	font-size: 50px;
+	opacity: 0.50;
+}   
+.slick-prev {
+	left: 10px;
+	z-index:999;
+}
+.slick-next {
+	right: 40px;
+	z-index:999;
+}
+
+
+
+
+
+@media screen and (min-width: 680px) {
+  .abby {
+    font-size: 110px;
+  }
+  .actor {
+    font-size: 65px;
+  }
+  .abc {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 679px) {
+  .abby {
+    font-size: 55px;
+  }
+  .actor {
+    font-size: 33px;
+  }
+  .abc {
+    font-size: 18px;
+  }
+}
+
+/*@media screen and (max-width: 360px) {
+  .abc {
+    font-size: 48px;
+  }
+}*/
+
+
+.thumbnail {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 55%;
+    left: 0;
+    width: 100%;
+}
+
+
+.navbar li a:hover{ 
+	color: #667799 !important;
+	transition-duration: 300ms !important;
+	transition-timing-function: ease-in-out !important;
+	transition-delay: 80ms !important;
+}
+
+.navbar-brand:hover{ 
+	color: #667799 !important;
+	transition-duration: 300ms !important;
+	transition-timing-function: ease-in-out !important;
+	transition-delay: 80ms !important;
+}
+
+.navbar-brand{ 
+	color: white !important;
+}
+
+/* purpose: resume download dropdown */
+.nav li a:hover{ 
+	color: #667799 !important;
+	transition-duration: 300ms !important;
+	transition-timing-function: ease-in-out !important;
+	transition-delay: 80ms !important;
+}
+
+.carousel .item {
+  min-width: 100%;
+  background-color: #fff;
+}
+
+.carousel-inner > .carousel:item > img {
+  min-width: 100%;
+  height: 100%;
+}
+
+/* purpose: remove focus border around hamburger */
+/*button:focus {
+  outline: none;
+}*/
+
+.slider{
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+@font-face {
+	font-family: 'Sacramento-Regular';
+	src: url(../fonts/Sacramento-Regular.ttf) format("truetype");
+}
+.sacramento_reg {
+	font-family: 'Sacramento-Regular';
+}
+
+
+@font-face {
+	font-family: 'Pacifico-Regular';
+	src: url(../fonts/Pacifico-Regular.ttf) format("truetype");
+}
+.pacifico_reg {
+	font-family: 'Pacifico-Regular';
+}
+
+
+@font-face {
+	font-family: 'AlegreyaSansSC-Regular';
+	src: url(../fonts/AlegreyaSansSC-Regular.ttf) format("truetype");
+}
+.aleg_reg {
+	font-family: 'AlegreyaSansSC-Regular';
+}
+
+@font-face {
+	font-family: 'AlegreyaSansSC-Medium';
+	src: url(../fonts/AlegreyaSansSC-Medium.ttf) format("truetype");
+}
+.aleg_med {
+	font-family: 'AlegreyaSansSC-Medium';
+}
+
+@font-face {
+	font-family: 'AlegreyaSansSC-Bold';
+	src: url(../fonts/AlegreyaSansSC-Bold.ttf) format("truetype");
+}
+.aleg_bold {
+	font-family: 'AlegreyaSansSC-Bold';
+}
+
+@font-face {
+	font-family: 'Forum-Regular';
+	src: url(../fonts/Forum-Regular.ttf) format("truetype");
+}
+.forum_reg {
+	font-family: 'Forum-Regular';
+}
+@font-face {
+	font-family: 'GildaDisplay-Regular';
+	src: url(../fonts/GildaDisplay-Regular.ttf) format("truetype");
+}
+.gilda_reg {
+	font-family: 'GildaDisplay-Regular';
+}
+@font-face {
+	font-family: 'Gotu-Regular';
+	src: url(../fonts/Gotu-Regular.ttf) format("truetype");
+}
+.gotu_reg {
+	font-family: 'Gotu-Regular';
+}
+@font-face {
+	font-family: 'JuliusSansOne-Regular';
+	src: url(../fonts/JuliusSansOne-Regular.ttf) format("truetype");
+}
+.julius_reg {
+	font-family: 'JuliusSansOne-Regular';
+}
+@font-face {
+	font-family: 'MarcellusSC-Regular';
+	src: url(../fonts/MarcellusSC-Regular.ttf) format("truetype");
+}
+.marc_reg {
+	font-family: 'MarcellusSC-Regular';
+}
+@font-face {
+	font-family: 'Slabo27px-Regular';
+	src: url(../fonts/Slabo27px-Regular.ttf) format("truetype");
+}
+.slab_reg {
+	font-family: 'Slabo27px-Regular';
+}
+@font-face {
+	font-family: 'TenaliRamakrishna-Regular';
+	src: url(../fonts/TenaliRamakrishna-Regular.ttf) format("truetype");
+}
+.tenali_reg {
+	font-family: 'TenaliRamakrishna-Regular';
+}
+@font-face {
+	font-family: 'TenorSans-Regular';
+	src: url(../fonts/TenorSans-Regular.ttf) format("truetype");
+}
+.tenor_reg {
+	font-family: 'TenorSans-Regular';
+}
+
+
+
+
+@font-face {
+	font-family: 'Belleza-Regular';
+	src: url(../fonts/Belleza-Regular.ttf) format("truetype");
+}
+.belleza_reg {
+	font-family: 'Belleza-Regular';
+}
+
+@font-face {
+	font-family: 'Cinzel-Regular';
+	src: url(../fonts/Cinzel-Regular.ttf) format("truetype");
+}
+.cinzel_reg {
+	font-family: 'Cinzel-Regular';
+}
+
+@font-face {
+	font-family: 'IMFellDoublePicaSC-Regular';
+	src: url(../fonts/IMFellDoublePicaSC-Regular.ttf) format("truetype");
+}
+.imfell_reg {
+	font-family: 'IMFellDoublePicaSC-Regular';
+}
+
+@font-face {
+	font-family: 'JosefinSlab-Light';
+	src: url(../fonts/JosefinSlab.ttf) format("truetype");
+}
+.josefin_light {
+	font-family: 'JosefinSlab';
+}
+
+@font-face {
+	font-family: 'JosefinSlab-Regular';
+	src: url(../fonts/JosefinSlab-Regular.ttf) format("truetype");
+}
+.josefin_reg {
+	font-family: 'JosefinSlab-Regular';
+}
+
+@font-face {
+	font-family: 'OverlockSC-Regular';
+	src: url(../fonts/OverlockSC-Regular.ttf) format("truetype");
+}
+.overlook_reg {
+	font-family: 'OverlockSC-Regular';
+}
+
+@font-face {
+	font-family: 'Pompiere-Regular';
+	src: url(../fonts/Pompiere-Regular.ttf) format("truetype");
+}
+.pomp_reg {
+	font-family: 'Pompiere-Regular';
+}
+
+
