@@ -46,38 +46,11 @@
  *   - pixel 5a 413px break
  */
 @media only screen and (max-width: 600px) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-	#parallax {
+  #parallax {
     height: 800px;
-    /* transform: translateZ(-2px) scale(3); */
+    transform: translateZ(-2px) scale(3);
   }
-    
-=======
-	#parallax { height: 800px; }
-  .navbar-toggler { z-index: 3; }
-  .nav-link { font-size: 30px; }
-  .navbar {
-      z-index: 2;
-      height: 100px;
-      width: 70%;
-    }
-  .nav-social {
-      z-index: 1;
-      height: 100px;
-      font-size: 20px;
-  }
-  .navbar-collapse {
-      padding-left: 20px;
-      padding-top: 100px;
-  }
-<<<<<<< HEAD
->>>>>>> parent of ed6bc98 (fix: removed navbar)
-=======
->>>>>>> parent of ed6bc98 (fix: removed navbar)
-=======
-	#parallax { height: 800px; }
->>>>>>> parent of 8e6faae (feat: removed theatre link, updated new resumes)
+      
   .abby_title {
     font-size: 50px;
     height: 55px;
