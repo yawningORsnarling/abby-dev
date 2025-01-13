@@ -47,6 +47,7 @@
  */
 @media only screen and (max-width: 600px) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	#parallax {
     height: 800px;
     /* transform: translateZ(-2px) scale(3); */
@@ -74,6 +75,9 @@
 >>>>>>> parent of ed6bc98 (fix: removed navbar)
 =======
 >>>>>>> parent of ed6bc98 (fix: removed navbar)
+=======
+	#parallax { height: 800px; }
+>>>>>>> parent of 8e6faae (feat: removed theatre link, updated new resumes)
   .abby_title {
     font-size: 50px;
     height: 55px;
