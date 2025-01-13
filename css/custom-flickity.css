@@ -97,3 +97,7 @@
 .resume-carousel-2 .flickity-prev-next-button.no-svg {
     color:#4f5d75;
 }
+
+.flickity-prev-next-button:disabled {
+    display: none;
+}
