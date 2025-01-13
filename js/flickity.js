@@ -24,7 +24,6 @@ var flkty = new Flickity( cc1, {
 });
 var cc2 = document.querySelector('.commercial-carousel-2');
 var flkty = new Flickity( cc2, {
-    lazyLoad: true,
     autoPlay: false,
     wrapAround: true,
     pageDots: false
