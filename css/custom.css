@@ -48,7 +48,7 @@
 @media only screen and (max-width: 600px) {
 	#parallax {
     height: 800px;
-    transform: translateZ(-2px) scale(3);
+    /* transform: translateZ(-2px) scale(3); */
   }
     
   .abby_title {
