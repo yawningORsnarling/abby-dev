@@ -87,6 +87,13 @@
 .flickity-prev-next-button:disabled {
     display: none;
 }
+/* hide highlighted cicrle around arrow when clicked */
+.flickity-button:focus,
+.flickity-prev-next-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 
 /* resume section */
 .resume-carousel-1 .flickity-prev-next-button .arrow,
@@ -96,8 +103,4 @@
 .resume-carousel-1 .flickity-prev-next-button.no-svg,
 .resume-carousel-2 .flickity-prev-next-button.no-svg {
     color:#4f5d75;
-}
-.flickity-prev-next-button:focus {
-    outline: none;
-    box-shadow: none;
 }
