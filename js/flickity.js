@@ -26,10 +26,10 @@ var flkty_cc1 = new Flickity( cc1, {
 });
 // Override the stopPlayer method
 flkty_cc1.stopPlayer = function() {
-    this.player.stop();
+    flkty_cc1.stop();
     // Resume autoPlay after 3 seconds
     setTimeout(() => {
-        this.player.play();
+        flkty_cc1.play();
     }, 1000);
 };
 var cc2 = document.querySelector('.commercial-carousel-2');
