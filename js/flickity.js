@@ -24,6 +24,9 @@ var flkty = new Flickity( cc1, {
     prevNextButtons: false,
     pageDots: false
 });
+flkty.on('staticClick', function() {
+    flkty.playPlayer();
+});
 var cc2 = document.querySelector('.commercial-carousel-2');
 var flkty = new Flickity( cc2, {
     autoPlay: false,
