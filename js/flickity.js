@@ -18,6 +18,8 @@ var flkty = new Flickity( cc1, {
     friction: 1.5,
     autoPlay: true,
     autoPlay: 4000,
+    wrapAround: true,
+    draggable: false,
     pauseAutoPlayOnHover: false,
     prevNextButtons: false,
     pageDots: false
