@@ -25,11 +25,13 @@ var flkty_cc1 = new Flickity( cc1, {
     pageDots: false
 });
 // Override the stopPlayer method
-flkty_cc1.stopPlayer = function() {
-    flkty_cc1.stop();
+var flkty_cc1_copy = flkty_cc1;
+// var flkty_cc1_copy = Object.assign({}, flkty_cc1);
+flkty_cc1_copy.stopPlayer = function() {
+    this.player.stop();
     // Resume autoPlay after 3 seconds
     setTimeout(() => {
-        flkty_cc1.play();
+        this.player.play();
     }, 1000);
 };
 var cc2 = document.querySelector('.commercial-carousel-2');
