@@ -15,6 +15,8 @@ var flkty_tc1 = new Flickity( tc1, {
 var cc1 = document.querySelector('.commercial-carousel-1');
 var flkty_cc1 = new Flickity( cc1, {
     selectedAttraction: 0.02,
+    lazyLoad: true,
+    imagesLoaded: true,
     friction: 1.5,
     autoPlay: true,
     autoPlay: 4000,
@@ -26,12 +28,12 @@ var flkty_cc1 = new Flickity( cc1, {
 });
 
 // Re-enable autoplay after user interaction
-flkty_cc1.on('staticClick.flickity', function() {
-    flkty_cc1.playPlayer();
+flkty_cc1.addEventListener('pointerDown', () => {
+    flkty.playPlayer();
 });
 
-flkty_cc1.on('dragEnd.flickity', function() {
-    flkty_cc1.playPlayer();
+flkty_cc1.addEventListener('dragEnd', () => {
+    flkty.playPlayer();
 });
 
 var cc2 = document.querySelector('.commercial-carousel-2');
