@@ -24,13 +24,7 @@ var flkty_cc1 = new Flickity( cc1, {
     draggable: false,
     pauseAutoPlayOnHover: false,
     prevNextButtons: false,
-    pageDots: false,
-    on: {
-        ready: function() {
-            this.off( 'uiChange', this.stopPlayer );
-            this.off( 'pointerDown', this.stopPlayer );
-        }
-    }
+    pageDots: false
 });
 
 var cc2 = document.querySelector('.commercial-carousel-2');
