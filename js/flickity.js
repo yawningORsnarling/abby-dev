@@ -36,9 +36,13 @@ var flkty_cc2 = new Flickity( cc2, {
 var cc3 = document.querySelector('.commercial-carousel-3');
 var flkty_cc3 = new Flickity( cc3, {
     selectedAttraction: 0.02,
+    lazyLoad: true,
+    imagesLoaded: true,
     friction: 1.5,
     autoPlay: true,
     autoPlay: 4000,
+    wrapAround: true,
+    draggable: false,
     pauseAutoPlayOnHover: false,
     prevNextButtons: false,
     pageDots: false
