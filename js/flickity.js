@@ -24,16 +24,16 @@ var flkty_cc1 = new Flickity( cc1, {
     prevNextButtons: false,
     pageDots: false
 });
-// Override the stopPlayer method
-var flkty_cc1_copy = flkty_cc1;
-// var flkty_cc1_copy = Object.assign({}, flkty_cc1);
-flkty_cc1_copy.stopPlayer = function() {
-    flkty_cc1_copy.player.stop();
-    // Resume autoPlay after 3 seconds
-    setTimeout(() => {
-        flkty_cc1_copy.player.play();
-    }, 1000);
-};
+
+// Re-enable autoplay after user interaction
+flkty_cc1.on('staticClick.flickity', function() {
+    flkty_cc1.playPlayer();
+});
+
+flkty_cc1.on('dragEnd.flickity', function() {
+    flkty_cc1.playPlayer();
+});
+
 var cc2 = document.querySelector('.commercial-carousel-2');
 var flkty_cc2 = new Flickity( cc2, {
     autoPlay: false,
