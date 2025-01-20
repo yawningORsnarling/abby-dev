@@ -261,14 +261,14 @@ body {
     filter: opacity(75%);
 }
 
-.theatre-link {
+.more-link {
     color: white;
     font-family: 'Gotu-Regular';
     filter: opacity(75%);
 }
 
 .social-icons:hover,
-.theatre-link:hover {
+.more-link:hover {
     color: #667799 !important;
     transition-duration: 350ms !important;
     transition-timing-function: ease-in-out !important;
