@@ -28,11 +28,11 @@ var flkty_cc1 = new Flickity( cc1, {
 });
 
 // Re-enable autoplay after user interaction
-flkty_cc1.addEventListener('pointerDown', () => {
+flkty_cc1.on('staticClick.flickity', function() {
     flkty.playPlayer();
 });
 
-flkty_cc1.addEventListener('dragEnd', () => {
+flkty_cc1.on('dragEnd.flickity', function() {
     flkty.playPlayer();
 });
 
