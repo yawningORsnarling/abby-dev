@@ -12,20 +12,20 @@ var flkty_tc1 = new Flickity( tc1, {
 });
 
 /* Commercial - Ad Ticker #1 */
-var cc1 = document.querySelector('.commercial-carousel-1');
-var flkty_cc1 = new Flickity( cc1, {
-    selectedAttraction: 0.02,
-    lazyLoad: true,
-    imagesLoaded: true,
-    friction: 1.5,
-    autoPlay: true,
-    autoPlay: 4000,
-    wrapAround: true,
-    draggable: false,
-    pauseAutoPlayOnHover: false,
-    prevNextButtons: false,
-    pageDots: false
-});
+// var cc1 = document.querySelector('.commercial-carousel-1');
+// var flkty_cc1 = new Flickity( cc1, {
+//     selectedAttraction: 0.02,
+//     lazyLoad: true,
+//     imagesLoaded: true,
+//     friction: 1.5,
+//     autoPlay: true,
+//     autoPlay: 4000,
+//     wrapAround: true,
+//     draggable: false,
+//     pauseAutoPlayOnHover: false,
+//     prevNextButtons: false,
+//     pageDots: false
+// });
 
 /* Continue playing Ad Ticker #1 after user interaction */
 flkty_cc1.on('staticClick', function() {
@@ -82,3 +82,83 @@ var flkty_rc2 = new Flickity( rc2, {
     wrapAround: false,
     pageDots: false,
 });
+
+//
+//   Variables
+//
+//////////////////////////////////////////////////////////////////////
+
+// Play with this value to change the speed
+let tickerSpeed = .75;
+
+let flickity = null;
+let isPaused = false;
+const slideshowEl = document.querySelector('.commercial-carousel-1');
+
+
+//
+//   Functions
+//
+//////////////////////////////////////////////////////////////////////
+
+const update = () => {
+  if (isPaused) return;
+  if (flickity.slides) {
+    flickity.x = (flickity.x - tickerSpeed) % flickity.slideableWidth;
+    flickity.selectedIndex = flickity.dragEndRestingSelect();
+    flickity.updateSelectedSlide();
+    flickity.settle(flickity.x);
+  }
+  window.requestAnimationFrame(update);
+};
+
+const pause = () => {
+  isPaused = false;
+};
+
+const play = () => {
+  if (isPaused) {
+    isPaused = false;
+    window.requestAnimationFrame(update);
+  }
+};
+
+
+//
+//   Create Flickity
+//
+//////////////////////////////////////////////////////////////////////
+
+flickity = new Flickity(slideshowEl, {
+    draggable: false,
+    pauseAutoPlayOnHover: false,
+    prevNextButtons: false,
+    autoPlay: true,
+    pageDots: false,
+    wrapAround: true,
+    draggable: false
+});
+flickity.x = 0;
+
+
+//
+//   Add Event Listeners
+//
+//////////////////////////////////////////////////////////////////////
+
+slideshowEl.addEventListener('mouseenter', pause, false);
+slideshowEl.addEventListener('focusin', pause, false);
+slideshowEl.addEventListener('mouseleave', play, false);
+slideshowEl.addEventListener('focusout', play, false);
+
+flickity.on('dragStart', () => {
+  isPaused = true;
+});
+
+
+//
+//   Start Ticker
+//
+//////////////////////////////////////////////////////////////////////
+
+update();
