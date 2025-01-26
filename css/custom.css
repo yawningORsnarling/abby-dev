@@ -86,7 +86,10 @@
 
 /* medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-	#parallax { height: 1200px; }
+	#parallax {
+    height: 1200px;
+    transform: translateZ(-2px) scale(3);
+  }
   .abby_title {
     font-size: 70px;
     height: 70px;
