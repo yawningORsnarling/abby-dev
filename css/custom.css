@@ -64,7 +64,7 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1199px) {
   #parallax {
     transform: translateZ(-2px) scale(3);
   }
