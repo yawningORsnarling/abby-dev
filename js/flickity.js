@@ -114,11 +114,17 @@ const play = () => {
 
 
 flickity = new Flickity(slideshowEl, {
-    autoPlay: false,
-    prevNextButtons: true,
-    pageDots: false,
-    draggable: false,
+    selectedAttraction: 0.02,
+    lazyLoad: true,
+    imagesLoaded: true,
+    friction: 1.5,
+    autoPlay: true,
+    autoPlay: 4000,
     wrapAround: true,
+    draggable: false,
+    pauseAutoPlayOnHover: false,
+    prevNextButtons: false,
+    pageDots: false
 });
 flickity.x = 0;
 
