@@ -12,20 +12,20 @@ var flkty_tc1 = new Flickity( tc1, {
 });
 
 /* Commercial - Ad Ticker #1 */
-// var cc1 = document.querySelector('.commercial-carousel-1');
-// var flkty_cc1 = new Flickity( cc1, {
-//     selectedAttraction: 0.02,
-//     lazyLoad: true,
-//     imagesLoaded: true,
-//     friction: 1.5,
-//     autoPlay: true,
-//     autoPlay: 4000,
-//     wrapAround: true,
-//     draggable: false,
-//     pauseAutoPlayOnHover: false,
-//     prevNextButtons: false,
-//     pageDots: false
-// });
+/*var cc1 = document.querySelector('.commercial-carousel-1');
+var flkty_cc1 = new Flickity( cc1, {
+    selectedAttraction: 0.02,
+    lazyLoad: true,
+    imagesLoaded: true,
+    friction: 1.5,
+    autoPlay: true,
+    autoPlay: 4000,
+    wrapAround: true,
+    draggable: false,
+    pauseAutoPlayOnHover: false,
+    prevNextButtons: false,
+    pageDots: false
+});*/
 
 /* Continue playing Ad Ticker #1 after user interaction */
 flkty_cc1.on('staticClick', function() {
