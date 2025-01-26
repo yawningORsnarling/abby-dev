@@ -64,12 +64,15 @@
   }
 }
 
-/* small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-	#parallax {
-    height: 1000px;
+@media only screen and (max-width: 768px) {
+  #parallax {
     transform: translateZ(-2px) scale(3);
   }
+}
+
+/* small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	#parallax { height: 1000px; }
   .abby_title {
     font-size: 50px;
     height: 55px;
@@ -86,10 +89,7 @@
 
 /* medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-	#parallax {
-    height: 1200px;
-    transform: translateZ(-2px) scale(3);
-  }
+	#parallax { height: 1200px; }
   .abby_title {
     font-size: 70px;
     height: 70px;
